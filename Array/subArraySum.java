@@ -27,26 +27,21 @@ public class subArraySum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Input size
         System.out.print("Enter size of array: ");
         int n = sc.nextInt();
 
         int[] nums = new int[n];
 
-        // Input array elements
         System.out.println("Enter array elements:");
         for (int i = 0; i < n; i++) {
             nums[i] = sc.nextInt();
         }
 
-        // Input k
         System.out.print("Enter value of k: ");
         int k = sc.nextInt();
 
-        // Function call
         int result = subarraySum(nums, k);
 
-        // Output
         System.out.println("Number of subarrays with sum " + k + " = " + result);
 
         sc.close();
