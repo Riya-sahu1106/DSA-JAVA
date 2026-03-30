@@ -1,11 +1,8 @@
 package String;
-
 import java.util.*;
 
 public class groupAnagram {
-
     public static void main(String[] args) {
-
         String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
 
         GroupAnagrams obj = new GroupAnagrams();
@@ -14,20 +11,16 @@ public class groupAnagram {
         System.out.println(result);
     }
 }
-
 class GroupAnagrams {
-
     public List<List<String>> groupAnagrams(String[] strs) {
 
         if (strs == null || strs.length == 0) {
             return new ArrayList<>();
         }
-
         Map<String, List<String>> map = new HashMap<>();
 
         for (String str : strs) {
             String key = getFrequencyString(str);
-
             map.putIfAbsent(key, new ArrayList<>());
             map.get(key).add(str);
         }
@@ -50,7 +43,6 @@ class GroupAnagrams {
             sb.append(c).append(i);
             c++;
         }
-
         return sb.toString();
     }
 }
