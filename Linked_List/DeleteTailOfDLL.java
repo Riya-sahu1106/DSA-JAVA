@@ -23,7 +23,7 @@ class DeleteHeadDLL{
         return  head;
     }
 }
-public class DeleteHeadOfDLL {
+public class DeleteTailOfDLL {
     public static void main(String[] args) {
         Node6 head = new Node6(1);
         head.next = new Node6(2);
