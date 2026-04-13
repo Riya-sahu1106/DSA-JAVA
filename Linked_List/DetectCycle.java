@@ -19,18 +19,14 @@ class Solu {
 
         while (fast != null && fast.next != null) {
             slow = slow.next;
-
-            // Move fast two steps
             fast = fast.next.next;
 
             if (slow == fast) {
                 slow = head;
-
                 while (slow != fast) {
                     slow = slow.next;
                     fast = fast.next;
                 }
-
                 return slow;
             }
         }
