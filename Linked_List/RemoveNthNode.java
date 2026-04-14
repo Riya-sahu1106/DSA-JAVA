@@ -7,6 +7,10 @@ class Node11{
     int data;
     Node next;
 
+    Node11(int d,Node next1){
+        data = d;
+        next = next1;
+    }
     Node11(int d){
         data = d;
         next = null;
