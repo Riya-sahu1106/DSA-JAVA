@@ -17,8 +17,9 @@ class LinkedList1 {
             return newNode;
         }
         Node15 current = head;
-        while (current.next != null)
+        while (current.next != null) {
             current = current.next;
+        }
             current.next = newNode;
             return head;
     }
