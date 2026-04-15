@@ -86,7 +86,7 @@ public class SortZeroOne {
         ll.insert(1);
         ll.insert(2);
         ll.insert(0);
-        ll.insert(1);Sort
+        ll.insert(1);
         ll.insert(2);
         ll.insert(0);
 
