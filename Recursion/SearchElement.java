@@ -23,5 +23,6 @@ public class SearchElement {
         if(idx==arr.length) return false;
         if(arr[idx]==target)return true;
            return exists(arr,target,idx+1);
+
     }
 }
