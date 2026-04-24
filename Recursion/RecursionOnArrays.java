@@ -10,6 +10,6 @@ public class RecursionOnArrays {
         if(idx==arr.length)return;
         System.out.println(arr[idx]);
         recPrint(arr,idx+1);
-        
+
     }
 }

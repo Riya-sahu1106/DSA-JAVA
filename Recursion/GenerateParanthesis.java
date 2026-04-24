@@ -44,5 +44,4 @@ public class GenerateParanthesis {
         List<String> ans = Solution.generateParenthesis(n);
         System.out.println(ans);
     }
-
 }
