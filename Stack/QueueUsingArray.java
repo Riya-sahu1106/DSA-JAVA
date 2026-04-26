@@ -12,7 +12,7 @@ public class QueueUsingArray {
         front = 0;
         rear = -1;
     }
-    
+
 
     public QueueUsingArray() {
         this(1000);

@@ -33,8 +33,8 @@ public class reverseString {
         System.out.print("Enter the string: ");
         String s = sc.nextLine();
 
-        reverseString obj = new reverseString(); // object create
-        String result = obj.reverseWords(s);     // method call
+        reverseString obj = new reverseString();
+        String result = obj.reverseWords(s);
 
         System.out.println("Output: " + result);
     }

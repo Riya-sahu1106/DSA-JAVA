@@ -54,7 +54,7 @@ public class MinStack {
         s.push(7);
         s.push(2);
 
-        s.printStack(); // [5, 3, 7, 2]
+        s.printStack();
 
         System.out.println("Min: " + s.getMin());
 
