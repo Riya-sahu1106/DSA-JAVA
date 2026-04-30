@@ -21,7 +21,7 @@ public class NextGreaterElementByStack {
         return res;
     }
     public static void main(String[] args) {
-        int[] arr = {1, 5, 3, 2, 1, 6, 3, 4};
+        int[] arr = {100, 80, 60, 70, 60, 75, 85};
 
         int[] result = nextGreaterElement(arr);
 
