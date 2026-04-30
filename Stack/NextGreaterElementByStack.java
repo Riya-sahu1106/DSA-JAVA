@@ -3,12 +3,10 @@ package Stack;
 import java.util.*;
 
 public class NextGreaterElementByStack {
-
     public static int[] nextGreaterElement(int[] arr) {
         int n = arr.length;
         int[] res = new int[n];
         Stack<Integer> st = new Stack<>();
-
         for (int i = n - 1; i >= 0; i--) {
             while (!st.isEmpty() && st.peek() <= arr[i]) {
                 st.pop();
@@ -22,7 +20,6 @@ public class NextGreaterElementByStack {
         }
         return res;
     }
-
     public static void main(String[] args) {
         int[] arr = {1, 5, 3, 2, 1, 6, 3, 4};
 
