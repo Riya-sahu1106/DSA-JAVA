@@ -10,7 +10,7 @@ class SumOfSubarrRanges {
         Stack<Integer> st = new Stack<>();
         for (int i = n - 1; i >= 0; i--) {
             while (!st.isEmpty() && arr[st.peek()] >= arr[i]) {
-   Su             st.pop();
+          st.pop();
             }
             ans[i] = !st.isEmpty() ? st.peek() : n;
             st.push(i);
