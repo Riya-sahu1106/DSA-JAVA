@@ -72,8 +72,9 @@ public class LRUCache {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Enter the capacity of Cache: ");
         int capacity = sc.nextInt();
-        System.out.print("Enter the number of operations:");
+        System.out.print("Enter the number of operations: ");
         int q = sc.nextInt();
 
         LRU cache = new LRU(capacity);
