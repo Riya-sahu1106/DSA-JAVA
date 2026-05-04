@@ -16,7 +16,7 @@ public class MaximumTempBrute {
                 }
             }
         }
-        return days;
+        return days
     }
 
     public static void main(String[] args) {
