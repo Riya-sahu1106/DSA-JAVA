@@ -1,6 +1,5 @@
 package Stack;
 
-
 public class StackUsingArray {
     private int[]stackArray;
     private int capacity;
@@ -59,13 +58,8 @@ public class StackUsingArray {
         stack.push(30);
 
         stack.printStack();
-
         System.out.println("Top element: "+stack.top());
-
         stack.pop();
         stack.printStack();
-
     }
-
-
 }

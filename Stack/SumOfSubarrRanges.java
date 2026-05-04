@@ -99,6 +99,5 @@ class SumOfSubarrRanges {
 
         long result =s.subArrayRanges(arr);
         System.out.println(result);
-
     }
 }

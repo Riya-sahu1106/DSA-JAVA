@@ -14,7 +14,6 @@ public class LargestHistogram {
             heights[i]=sc.nextInt();
         }
         int result = sol.largestRectangleArea(heights);
-
         System.out.println("Maximum Area: " + result);
     }
 }

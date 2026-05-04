@@ -2,6 +2,7 @@ package Stack;
 import java.util.Scanner;
 import java.util.Stack;
 
+//23*54*+9-
 public class PostfixToPrefix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -14,7 +14,7 @@ public class Infix {
 
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            int ascii = (int) ch;
+            int ascii = (int) ch;  //0=48 and 9=57
 
             if (ascii >= 48 && ascii <= 57) {
                 val.push(ascii - 48);
@@ -83,7 +83,6 @@ public class Infix {
 
             op.pop();
         }
-
         System.out.println(val.peek());
     }
 }

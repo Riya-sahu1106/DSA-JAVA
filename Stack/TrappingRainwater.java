@@ -20,7 +20,7 @@ public class TrappingRainwater {
           }
           int totalWater = 0;
           for(int i=0; i<n; i++){
-              totalWater += Math.min(leftMax[i], rightMax[i]) - height[i];
+              totalWater += Math.min( leftMax[i], rightMax[i] ) - height[i];
           }
           return  totalWater;
     }
