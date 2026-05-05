@@ -48,3 +48,16 @@ public class NumberHasEvenDigits {
         }
     }
 
+//public int findNumbers(int[] nums) {
+//    int evenCount = 0;
+//
+//    for(int num : nums){
+//        int len = StringValueOf(num).length();
+//
+//        if(len% 2==0){
+//            evenCount++;
+//        }
+//    }
+//    return evenCount;
+//}
+
