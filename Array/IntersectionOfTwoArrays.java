@@ -1,30 +1,31 @@
 package Array;
 
-import java.util.HashSet;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
 
-public class IntersectionOfArrays {
-    public static int[] intersection(int[] nums1, int[] nums2) {
+public class IntersectionOfTwoArrays {
 
-        Set<Integer> set = new HashSet<>();
-        for (int num : nums1) {
-            set.add(num);
+    public static int[] intersection(int[] nums1, int[] nums2){
+        Map<Integer,Integer> map = new HashMap<>();
+        for(int num:nums1){
+            map.put(num, map.getOrDefault(num,0)+1);
         }
+        int[]res = new int[nums1.length];
+        int k = 0;
 
-        Set<Integer> resultSet = new HashSet<>();
-        for (int num : nums2) {
-            if (set.contains(num)) {
-                resultSet.add(num);
+        for(int num : nums2){
+            int count = map.getOrDefault(num,0);
+
+            if(count == 0){
+                continue;
+            }else{
+                res[k++] = num;
+                map.put(num,count-1);
             }
         }
-
-        int[] result = new int[resultSet.size()];
-        int i = 0;
-        for (int num : resultSet) {
-            result[i++] = num;
-        }
-        return result;
+        return Arrays.copyOfRange(res,0,k);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
