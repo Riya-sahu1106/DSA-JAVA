@@ -14,8 +14,6 @@ public class DuplicateZeroes {
             if (arr[s] == 0) {
                 if (d < arr.length) dest[d] = 0;
                 d++;
-
-                if (d < arr.length) dest[d] = 0;
             } else {
                 if (d < arr.length) dest[d] = arr[s];
             }
