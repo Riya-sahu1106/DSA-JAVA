@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class PascalTriangle2Opti {
-
     public static List<Integer> getRow(int rowIndex) {
 
         List<Integer> row = new ArrayList<>();
@@ -16,12 +15,9 @@ public class PascalTriangle2Opti {
 
             row.add(currEle);
         }
-
         return row;
     }
-
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter row index: ");
