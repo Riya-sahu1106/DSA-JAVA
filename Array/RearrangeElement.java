@@ -9,7 +9,7 @@ public class RearrangeElement {
         int n = arr.length;
 
         int[] temp = new int[n];
-
+        
         int left = 0;
         int right = n - 1;
 
