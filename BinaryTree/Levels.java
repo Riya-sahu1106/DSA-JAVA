@@ -1,15 +1,15 @@
 package BinaryTree;
 
-class Node{
+class Node1{
     int val;
     Node left;
     Node right;
-    Node(int val){
+    Node1(int val){
         this.val=val;
     }
 }
 
-public class Implementation {
+public class Levels {
     public static void main(String[] args) {
         Node a = new Node(3);
         Node b = new Node(4);
@@ -23,19 +23,9 @@ public class Implementation {
         d.left=f; c.right=g;
         display(a);
         System.out.println();
-        System.out.println("size is: "+size(a));
-        System.out.println("Sum is: "+sum(a));
-        System.out.println("Maximum of binary tree is: "+max(a));
+        System.out.println("Levels of Binary tree is: "+levels(a));
     }
 
-    private static int size(Node root) {
-       if(root==null) return 0;
-       int leftSize = size(root.left);
-       int rightSize= size(root.right);
-       return 1+leftSize+rightSize;
-    }
-
-    //preorder
     public static void display(Node root){
         if(root==null) return;
         System.out.print(root.val+" ");
@@ -43,13 +33,8 @@ public class Implementation {
         display(root.right);
     }
 
-    private static int sum(Node root) {
+    public static int levels(Node root){
         if(root==null) return 0;
-        return root.val+sum(root.left)+sum(root.right);
-    }
-
-    private static int max(Node root) {
-        if(root==null) return Integer.MIN_VALUE;
-        return Math.max(root.val,Math.max(max(root.left),max(root.right)));
+        return 1+Math.max(levels(root.left),levels(root.right));
     }
 }
