@@ -11,12 +11,38 @@ class Node7{
         this.val=val;
     }
 }
+
+class Pair{
+    Node7 node;
+    int level;
+    Pair(Node7 node,int level){
+        this.level=level;
+        this.node=node;
+    }
+}
+
 public class LevelOrder {
-    public static void display(Node7 root){
-        if(root==null) return;
-        System.out.print(root.val+" ");
+    public static void display(Node7 root) {
+        if (root == null) return;
+        System.out.print(root.val + " ");
         display(root.left);
         display(root.right);
+    }
+
+    public static void levelOrderLineWise(Node7 root) {
+        Queue<Pair> q = new LinkedList<>();
+        int currLevel = 0;
+        q.add(new Pair(root, 0));
+        while (q.size() > 0) {
+            Pair front = q.remove();
+            if (front.level != currLevel) {
+                currLevel++;
+                System.out.println();
+            }
+            System.out.print(front.node.val + " ");
+            if (front.node.left != null) q.add(new Pair(front.node.left, front.level + 1));
+            if (front.node.right != null) q.add(new Pair(front.node.right, front.level + 1));
+        }
     }
      private static void levelOrder(Node7 root){
          Queue<Node7> q = new LinkedList<>();
@@ -43,5 +69,7 @@ public class LevelOrder {
         display(a);
         System.out.println();
         levelOrder(a);
+        System.out.println();
+        levelOrderLineWise(a);
     }
 }
