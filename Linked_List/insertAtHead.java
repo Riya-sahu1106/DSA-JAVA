@@ -20,7 +20,11 @@ class Insert{
 
         Node newNode = new Node(newData,head);
 
-        return newNode;
+        newNode.next = head;
+
+        head = newNode;
+
+        return head;
     }
 
   public  void printList(Node head){
