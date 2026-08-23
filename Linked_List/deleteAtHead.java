@@ -10,8 +10,19 @@ class Node2{
     }
 
 }
-class DeleteHead{
-    public Node deleteHead(Node head){
+//class DeleteHead{
+//    public Node deleteHead(Node head){
+//        if(head==null || head.next==null){
+//            return null;
+//        }
+//
+//        head=head.next;
+//
+//        return head;
+//    }
+//}
+public class deleteAtHead {
+    public static Node deleteHead(Node head){
         if(head==null || head.next==null){
             return null;
         }
@@ -20,8 +31,6 @@ class DeleteHead{
 
         return head;
     }
-}
-public class deleteAtHead {
     public static void main(String[] args) {
         Node head = new Node(1);
         head.next = new Node(2);
@@ -34,8 +43,8 @@ public class deleteAtHead {
         }
 
         System.out.println();
-        DeleteHead obj = new DeleteHead();
-        head = obj.deleteHead(head);
+
+        head = deleteHead(head);
 
         System.out.print("After deletion linkedlist: ");
         // Print list after deletion

@@ -48,7 +48,5 @@ public class ArrayToLinkedList {
         Node16 head = convert(arr);
         print(head);
 
-
-
     }
 }

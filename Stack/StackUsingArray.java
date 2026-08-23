@@ -57,7 +57,9 @@ public class StackUsingArray {
         stack.push(20);
         stack.push(30);
 
+        System.out.print("All elements of stack:");
         stack.printStack();
+
         System.out.println("Top element: "+stack.top());
         stack.pop();
         stack.printStack();

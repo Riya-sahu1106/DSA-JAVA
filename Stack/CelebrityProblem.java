@@ -28,7 +28,6 @@ public class CelebrityProblem {
                 }
             }
         }
-
         return candidate;
     }
     public static void main(String[] args) {

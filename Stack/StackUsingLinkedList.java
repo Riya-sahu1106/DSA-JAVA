@@ -19,11 +19,13 @@ public class StackUsingLinkedList {
     public StackUsingLinkedList() {
         head = null;
     }
+
     public void push(int x) {
         ListNode node = new ListNode(x);
         node.next = head;
         head = node;
     }
+
     public int pop() {
         if (isEmpty()) {
             System.out.println("Stack is empty");
@@ -33,6 +35,7 @@ public class StackUsingLinkedList {
         head = head.next;
         return value;
     }
+
     public int peek() {
         if (isEmpty()) {
             System.out.println("Stack is empty");
