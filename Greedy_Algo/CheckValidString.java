@@ -18,9 +18,12 @@ public class CheckValidString {
                 minOpen--;
                 maxOpen--;
             }
-            else {
+            else if(c == '*'){
                 minOpen--;
                 maxOpen++;
+            }
+            else{
+                return false;
             }
             if (maxOpen < 0) return false;
             if (minOpen < 0) minOpen = 0;
